@@ -4,9 +4,9 @@ function checkForSpam(message) {
     const hasSpam = normalizedMessage.includes("spam");
     const hasSale = normalizedMessage.includes("sale");
     if (hasSpam || hasSale) {
-        return 'true';
+        return true;
     } else {
-        return 'false';
+        return false;
     }
 }
 
